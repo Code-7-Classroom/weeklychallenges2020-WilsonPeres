@@ -1,0 +1,28 @@
+.container{
+    height:800px;
+    width: 800px;
+    border: solid black 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+    
+}
+    /* Black Blocks */
+.black{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+    /* White Blocks */
+.white{
+background-color: white;
+width: 100px;
+height: 100px;
+}
