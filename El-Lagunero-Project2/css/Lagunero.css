@@ -1,0 +1,429 @@
+body{
+    background-color:#c2e0e7;
+    color: whitesmoke;
+}
+.hero{
+    background-image: url("icecream.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;}
+.heroText{
+    padding-top: 150px;
+    color: black;
+    text-align: center;
+    font: 70px bold;
+}
+.nextLine{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+                            /* Nav Bar */
+
+.NavList{
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+    background-color:#ff1493 ;
+    border: solid white;
+    width: 97%;
+    margin-top: 0px;
+}
+ul .NavList{
+    margin: 0px;
+}
+.NavList li{
+    display: inline-block;
+    padding: 5px 70px;
+    color: white;
+    font-size: 30px;
+}
+.NavList a{
+    text-decoration: none;
+    color: white;
+}
+.NavList li a:hover,
+.NavList li a.active {
+    background-color: white;
+    color: black;
+ }
+
+.clear{
+    clear: both;
+}
+
+                            /* Home Page */
+.Intro{
+    height: auto;
+    width: auto;
+    background-color:#c2e0e7;
+}
+.h1Intro{
+    color:whitesmoke;
+    font-weight: bold;
+    font-size:50px ;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+
+}
+.h1Intro span{
+    border: solid whitesmoke;
+    height: 40px;
+    width: 100px;
+    background-color: #ff1493;
+}
+.Intro p{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid white;
+    width: 700px;
+    background-color:#ff1493;
+}
+.infoBox{
+    display: flex;
+    flex-direction: row;
+    border: solid white;
+    background-color:#ff1493;
+    width: auto;
+}
+.infoBox h3{
+    text-decoration: underline;
+    font:35px bold;
+    text-align: center;
+}
+.infoBox ol{
+    text-align: center;
+    list-style: none; 
+    
+}
+.infoBox li{
+    font:25px bold;
+    padding-bottom: 30px;   
+
+}
+.infoBox P{
+    font: 25px bold;
+    text-align: center;
+}
+
+.Lagunero-Location{
+    background-image: url("Lagunero-Location.png");
+    height: 320px;
+    width: 80%;
+    background-size: cover;
+    border: solid whitesmoke;
+}
+.Location{
+    width: 33.33%;
+    margin-left: 30px;
+    
+}
+.hours{
+    width: 33.33%;
+    /* margin-left: 40px; */
+}
+.FeatureItems{
+    width: 33.33%;
+}
+.slideshow{
+    width:80%; 
+    height:320px;
+    margin-left: 30px;
+    border: solid whitesmoke;
+}
+
+
+                                /* Footer */
+
+.footer {
+    color: black;
+    background-color:#c2e0e7;   
+    width: 100%;}
+.footer ul{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}    
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer li{
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-left:30px;
+ } 
+ .li{
+     margin-top:0px;
+ }
+.IgIcon{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+}
+.FbIcon{
+    background-image: url("FacebookIcon.png");
+    background-size: cover;
+    list-style: none;
+    width: 50px;
+    height: 50px;;
+  }
+
+                        /* Menu page */
+
+.container{
+    border: solid white;
+    width: 100%;
+    background-color: #ff1493;}
+.container h2{
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 40px;}
+    
+.row1{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px ;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 150px ;
+    padding-bottom: 40px;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+}
+.row4{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+}
+.row5{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+}
+
+.box{
+    height:350px;
+    width: 25%;
+    /* border: solid red; */
+    background-color: #ff1493;
+    justify-content: center;
+}
+.box2{
+    height:50px;
+    width: 100%;
+    /* border: solid red; */
+    background-color: #ff1493;}
+h1{
+    text-align: center;
+    color:black;
+    font-size: 50px;    }
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+.MenuImg{
+    border: solid white;
+    height: 175px;
+    width: 175px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto}
+.Description{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    width: 290px;
+    display:block;
+    margin: 0 auto;
+    padding-top: 10px;}
+.price{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.row2 ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    
+}
+.row2 li{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+.row2 span{
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid black;
+    display: inline-block;}
+
+.dot1{ background-color:blue;}
+.dot2{ background-color: yellow;}    
+.dot3{ background-color: purple ;}
+.dot4{ background-color: white;}
+.dot5{ background-color: greenyellow;}
+.dot6{ background-color: orange;}
+.dot7{ background-color: #ffe12d;}
+.dot8{ background-color:pink;}
+.dot9{ background-color: chocolate;}
+
+.HrLine{
+    width: 90%;
+
+}    
+
+
+
+
+
+
+                    /* Contact Page */
+
+#contact-form input, 
+#contact-form textarea{
+    width:100%;
+    padding:10px;
+    border:1px #ddd solid;
+}
+#contact-form textarea{
+    height: 100px;
+}
+#contact-form input:focus,
+#contact-form textarea:focus{
+    outline:none;
+    color:black;
+}
+
+.contact-background{
+    background-color:#333;
+    color: white;
+}
+
+.container2{
+    overflow: auto;
+}
+.form{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid white;
+    width: 700px;
+    background-color: #ff1493;
+}
+.form-group label input{
+    display: block;
+    margin: 0 auto;
+}
+.formAlignment{
+    /* margin-left: 200px; */
+    padding-left: 20%;
+    padding-right:20%;
+}    
+.container p{
+    text-align: center;
+}
+
+input{
+    color: black;
+}
+
+/* #blue:checked ~ :not(.blue) { display:none } */
+
+
+                                    /* Media Query  */
+
+  @media only screen and (max-width: 800px) {
+                        /* Nav bar */
+    .NavList li{
+        padding: 5px 5%;
+    }  
+                        /* Footer */
+
+                        /* Contact Us */
+    .form{
+        width: 75%;
+    }
+                        /* Menu Page */
+    .row1 , .row3 ,.row4 ,.row5{
+      display: block;  
+      flex-direction: row;
+      margin-left:35%;
+      margin-right:35%;
+     }
+     .row2{
+        padding:0px;
+        padding-bottom: 40px;
+        width: 100%;
+     }
+     .Description, .price, .h3{
+         text-align: center;
+         width: 200px;      
+     }
+     .box{
+         padding-top: 20px;
+         padding-bottom: 50px;
+     }
+
+                        /* Home Page */
+     .Intro p{
+        font-size: 16px;
+        width: 75%;
+    }
+    .infoBox{
+        display: flex;
+        flex-direction: column-reverse;}
+    .Lagunero-Location{
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+    }
+    .Location{
+        width: 75%;
+        margin: auto;
+        padding-bottom: 40px;   
+    }
+    .hours{
+        width: 75%;
+        margin: auto;
+    }
+    .FeatureItems{
+        margin: auto;
+        width: 75%;
+    }
+    .slideshow{
+        display: block;
+        margin: 0 auto;
+        width:75%;
+    }
+}

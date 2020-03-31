@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Lagunero Home Page</title>
+    <link href="css/Lagunero.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+      <section>  
+        <div class="hero">
+          <div class="heroText"><h4>EL <br>Lagunero</h4></div>
+        </div>     
+      </section>
+
+      <div class="clear"></div>
+        <header>
+          <nav >
+            <ul class="NavList">
+              <li class="li"><a class="active" href="Home.html">Home</a></li>
+              <li><a href="Menu.html">Menu</a></li>
+              <!-- <li><a href="OurStory.html">Our Story</a></li> -->
+              <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>  
+          </nav>
+        </header>
+
+
+
+    <section class="Intro">
+        <h1 class="h1Intro"><span>Hola! Benvenidos!</span></h1>
+        <p>Welcome to El Lagunero! We are Charlottes go to place for Mexican Deserts and snacks.
+           Our commitment is to provide yummy and delicious authentic Mexican 
+           treats and snacks for you and your family to enjoy. We have something for everyone. From our cold and refreshing Raspadas the kids can drink on a hot summer day.
+           To our famous Manzanas Locas that will have your mouth watering and wanting more. 
+           Mi casa es tu casa. We hope to see you soon! 
+        </p>
+    </section>
+
+    <section class="infoBox">
+      <div class="Location">     
+        <h3> Location</h3>
+          <p>
+            3808 Driftwood Dr<br>
+            Charlotte, North Carolina 28205</p>
+          <a href="https://bit.ly/3drlJM8" target="_blank" rel="noopener"><img class="Lagunero-Location" src="css/Lagunero-Location.png" alt="map of our Location"></a>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="hours">
+        <h3>Our Hours</h3>
+          <ol>
+            <li> Sun 10:00AM - 8:00PM</li>
+            <li> Mon Closed - Closed</li>
+            <li> Tue 3:00PM - 8:00PM</li>
+            <li> Wed 3:00PM - 8:00PM</li>
+            <li> Thu 3:00PM - 8:00PM</li>
+            <li> Fri 3:00PM - 8:00PM</li>
+            <li> Sat 10:00AM - 8:00PM</li>
+          </ol>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="FeatureItems">
+        <h3>Famous Items</h3>
+            <p>Frutas Locas, Raspadas<br>
+             Mangonadas</p>
+        <img class="slideshow" src="script" name="slide" width="400" height="200" alt="A slideshow of our special snacks" />
+      </div>
+
+    </section>   
+
+    <footer >
+      <div class="footer">
+        <ul>
+          <li class="IgIcon"><a href="https://www.instagram.com/el_lagunero_antojos/" target="_blank" rel="noopener"><img src="css/IgIcon2.png" alt="Instagram Logo" style="width:50px; height: 50px;">Instagram</a></li>
+          <li class="FbIcon"><a href="https://www.facebook.com/El-Lagunero-1565383747055282/" target="_blank" rel="noopener"><img src="css/Facebookicon.png" alt="Instagram Logo" style="width:50px; height: 50px;">Facebook</a></li>
+        </ul>
+        <ul> 
+          <li class="li"><a href="Home.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          <li>3808 Driftwood Dr Charlotte, NC, 28205</li>
+          <li>Phone Number: (704)-258-2787</li>
+          <li>El Lagunero &copy;2020</li>
+        </ul>
+      </div>
+    </footer>
+
+<script>
+var i = 0; 			// Start Point
+var images = [0,1,2,3];	// Images Array
+var time = 2000;	// Time Between Switch
+	 
+// Image List
+images[0] = "https://live.staticflickr.com/8218/8263189191_87e6130de9_b.jpg";
+images[1] = "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/90151509_2757074467886198_2036538277602787328_n.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=EJ5_b_F3p4oAX-n1HKc&_nc_ht=scontent-iad3-1.xx&oh=438e51ece0e855e111f6260a6116c1c1&oe=5E9E2D0C";
+images[2] = "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/83785191_2715158422077803_4034505498324631552_o.jpg?_nc_cat=107&_nc_sid=110474&_nc_ohc=X0ywQWPemCIAX-p7-Me&_nc_ht=scontent-iad3-1.xx&oh=8c2197aaa4df9f4dfe49c43703269223&oe=5E9EAF5B";
+images[3] = "https://bit.ly/2wB8Gak";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every 2 seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Lagunero Contact Page</title>
+    <link href="css/Lagunero.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+   <header>
+    <section>  
+        <div class="hero">
+            <div class="heroText"><h4>EL <br>Lagunero</h4></div>
+          </div>     
+      </section>
+
+        <nav>
+            <ul class="NavList">
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="Menu.html">Menu</a></li>
+              <!-- <li><a href="OurStory.html">Our Story</a></li> -->
+              <li><a class ="active" href="ContactUs.html">Contact Us</a></li>
+            </ul>  
+         </nav>
+    </header>    
+
+    <section id="contact-form">
+        <h1 class="l-heading">Contact Us</h1>
+        <div class="container2">
+            <!-- <form class="form" action="#" method="get" onSubmit="return handleClick()"> -->
+            <form class="form" name="ContactForm" action="#" onsubmit="return FormValidator()" method="post">
+                <div class="formAlignment">
+                    <div class="form-group">
+                        <label for="firstName">First Name </label>
+                        <input class="FormNames" type="text" name="name" id="firstName" >
+                    </div>
+                    <div class="form-group">
+                        <label class="FormNumAdd" for="PhoneNumber">Phone Number</label>
+                        <input type="Number" id="PhoneNumber" name="phone">
+
+                        <label for="EmailAddress">Email Address</label>
+                        <input class="FormNumAdd" name="email" type="email" id="EmailAddress">
+                    </div>
+                    <div>    
+                        <label class="FormNumAdd" for="date">Dates</label>
+                        <input type="date" id="date" name="date">
+                    </div>    
+                    <div class="form-group">    
+                        <label for="Message">Message</label>
+                        <textarea id="Message" placeholder="write message here"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="send" name="Submit"> 
+                    </div>
+                </div>   
+            </form>
+        </div>
+    </section>
+
+    <footer >
+      <div class="footer">
+        <ul>
+            <li class="IgIcon"><a href="https://www.instagram.com/el_lagunero_antojos/" target="_blank" rel="noopener"><img src="css/IgIcon2.png" alt="Instagram Logo" style="width:50px; height: 50px;">Instagram</a></li>
+            <li class="FbIcon"><a href="https://www.facebook.com/El-Lagunero-1565383747055282/" target="_blank" rel="noopener"><img src="css/Facebookicon.png" alt="Instagram Logo" style="width:50px; height: 50px;">Facebook</a></li>
+        </ul>
+        <ul> 
+            <li class="li"><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li>3808 Driftwood Dr Charlotte, NC, 28205</li>
+            <li>Phone Number: (704)-258-2787</li>
+            <li>El Lagunero &copy;2020</li>
+        </ul>
+      </div>
+    </footer>
+    
+    <script>
+        
+    function FormValidator()                                    
+{
+    var name = document.forms["ContactForm"]["name"];               
+    var email = document.forms["ContactForm"]["email"];    
+    var phone = document.forms["ContactForm"]["phone"];  
+    var date = document.forms["ContactForm"]["date"];
+
+
+    if (name.value == "")                                  
+    {   
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+    if (phone.value == "")                           
+    { 
+        window.alert("Please enter your phone number."); 
+        phone.focus(); 
+        return false; 
+    } 
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+    if (date.value == "")                           
+    { 
+        window.alert("Please enter your Dates."); 
+        phone.focus(); 
+        return false; 
+    } 
+    return true;}
+    
+    </script>
+</body>
+</html>
