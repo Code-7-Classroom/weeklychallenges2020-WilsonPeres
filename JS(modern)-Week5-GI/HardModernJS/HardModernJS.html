@@ -1,0 +1,89 @@
+<html lang="en">
+ 
+<head>
+ 
+ <meta charset="UTF-8">
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+ <title>Dom Manipulation Hard</title>
+ <!-- Create two buttons, one that when clicked turns the background of the body red.
+   The other, when clicked, turns the body's background color white. Each of the background
+    colors should be defined as class styles and when the buttons are pushed the body's
+     classList is updated to include the correct class for the background. 
+ Create a single function that takes an input className and updates the body's classList 
+ to ONLY include that className
+  -->
+ <style>
+ 
+   * {
+ 
+     margin: 0;
+ 
+     padding: 0;
+ 
+   }
+ 
+   h1 {
+ 
+     color: red;
+ 
+   }
+ 
+   button {
+ 
+     padding: 10px;
+ 
+   }
+ 
+   .bg-red {
+ 
+     background-color: red;
+ 
+   }
+ 
+   .bg-white {
+ 
+     background-color: white;
+ 
+   }
+ 
+ </style>
+ 
+</head>
+ 
+<body class="body">
+ 
+   <button class="bg-red " onclick ="changeColor('bg-red')">
+ 
+     Turn it red!
+ 
+   </button>
+ 
+   <button class = "bg-white" onclick = "changeColor('bg-white')">
+    
+     Turn it white!
+ 
+   </button>
+ 
+   <script>
+
+    // Do Stuff Here
+    function changeColor(className){
+    var body = document.querySelector('body');
+    
+    while(body.classList.length > 0){
+        console.log('removing class ' + body.classList.item(0))
+      body.classList.remove(body.classList.item(0));
+    }
+    body.classList.add(className);
+  }
+
+   </script>
+ 
+</body>
+
+ 
+</html>
